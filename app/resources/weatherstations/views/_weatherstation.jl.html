@@ -1,0 +1,19 @@
+<div class="container" style="margin-top: 40px;">
+    <!-- <h3><% weatherstation %></h3> -->
+  
+    <div>
+      <small class="badge bg-primary"><% weatherstation.source_name %></small> |
+      <small class="badge bg-light text-dark"><% weatherstation.country %></small> |
+      <small class="badge bg-dark"><% weatherstation.station_id %></small>
+    </div>
+  
+    <h4><% weatherstation.source_name %></h4>
+  
+    <div><strong>ID stacji: </strong><% weatherstation.station_id %></div>
+    <div><strong>ID źródła: </strong><% weatherstation.source_id %></div>
+    <div><strong>Kod kraju: </strong><% weatherstation.country %></div>
+    <div><strong>Położenie: </strong>szerokość geog: <% weatherstation.latitude %>, długość geograficzna: <% weatherstation.longitude %></div>
+    <div><strong>Obserwacje prowadzone od: </strong><% weatherstation.start_date %> do: <% weatherstation.end_date %> </div>
+  </div>
+
+  
