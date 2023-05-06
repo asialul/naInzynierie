@@ -1,15 +1,62 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Pogoda</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/yeti/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-    <%
-      @yield
-    %>
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <title>Pogoda</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/yeti/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb=150px">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MeteoPoint</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+
+          <li class="nav-item"><a class="nav-link" href="/stations">Stations&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/stations/search_api">Api&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/stations/displaynew">Display New&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/stations/edit">Edit&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/stations/update">Update&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/stations/delete">Delete&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/login">Login&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/logout">Logout&nbsp</a></li>
+          
+                      <li class="nav-item"><a class="nav-link" href="/register">Register&nbsp</a></li>            
+        </ul>
+      </div>
     </div>
-  </body>
+  </nav>
+        </div>
+
+    <div class="container">
+
+    <%
+
+      @yield
+
+    %>
+
+    </div>
+
+
+
+  </body>
+
 </html>

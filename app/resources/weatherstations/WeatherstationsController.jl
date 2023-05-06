@@ -37,21 +37,26 @@ function create()
 end
 
 function edit()
+  #partial(joinpath(Genie.config.path_resources, "weatherstations", "views", "form.jl.html"), weatherstation = weatherstation, context = @__MODULE__)
   html(:weatherstations, :edit)
 end
 
-function update()
-  if ! isempty (find(Weatherstation, 
-        SQLWhereExpression("source_id = ? params(:source_id)")))
+#= function update()
+
+weatherstation = find(Weatherstation, SQLWhereExpression("source_id = ? params(:source_id)"))
     
-  else
-    throw(NOT_FOUND)
-  end
+if ! isempty(weatherstation)
+  create()
+else
+  partial(joinpath(Genie.config.path_resources, "weatherstations", "views", "_no_results.jl.html"))
 end
 
-function delete()
-  
-end
+end =#
+
+
+
+# function delete()
+# end
   
 end
 

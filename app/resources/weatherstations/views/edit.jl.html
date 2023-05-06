@@ -1,6 +1,11 @@
 <!-- app/resources/books/views/new.jl.html -->
 <h2>Edytuj wybraną stację:</h2><br><br>
-
-<form action="$(Genie.Router.linkto(:update_weatherstation))" method="POST">
-<% partial("app/resources/weatherstations/views/form.jl.html", context = @__MODULE__) %>
+<form action="$(Genie.Router.linkto(:get_weatherstations))" method="GET">
+    <input type="text" placeholder="wpisz id źródła">
+    <input type="submit" value="Potwierdź" />
 </form>
+
+
+<!--<form action="$(Genie.Router.linkto(:update_weatherstation))" method="POST">
+<% partial("app/resources/weatherstations/views/form.jl.html", context = @__MODULE__) %>
+</form>-->
